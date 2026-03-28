@@ -1,0 +1,31 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  byte-compile:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        emacs-version: ['27.1', '28.2', '29.4', '30.1', 'snapshot']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: purcell/setup-emacs@master
+        with:
+          version: ${{ matrix.emacs-version }}
+      - name: Byte-compile shared library
+        run: |
+          emacs --batch -L . \
+            --eval "(setq byte-compile-error-on-warn t)" \
+            -f batch-byte-compile batppuccin-themes.el
+      - name: Load all themes
+        run: |
+          emacs --batch -L . \
+            -l batppuccin-mocha-theme.el \
+            -l batppuccin-macchiato-theme.el \
+            -l batppuccin-frappe-theme.el \
+            -l batppuccin-latte-theme.el
