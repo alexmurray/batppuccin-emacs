@@ -39,6 +39,8 @@
 
 (provide-theme 'batppuccin-latte)
 
+(provide 'batppuccin-latte-theme)
+
 ;; Local Variables:
 ;; no-byte-compile: t
 ;; indent-tabs-mode: nil
