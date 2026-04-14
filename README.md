@@ -40,7 +40,7 @@ Batppuccin follows the conventions established in [zenburn-emacs](https://github
 - **Shared infrastructure in `batppuccin.el`.** Color palettes for all four flavors, the face application function, and a `defcustom` for user color overrides all live in one file. Adding a new variant means defining a color alist and a ~10-line wrapper.
 - **All 26 canonical Catppuccin colors** with exact hex values from the spec, plus derived colors for diff backgrounds, selection, cursor line, and the heading rainbow cycle.
 - **Follows the Catppuccin style guide** for syntax highlighting (mauve for keywords, green for strings, blue for functions, peach for constants, sky for operators, yellow for types, overlay2 for comments, rosewater for the cursor) and editor UI (lavender for active line numbers, teal for search backgrounds, red/green/blue at low opacity for diffs).
-- **Broad face coverage** out of the box -- built-in Emacs faces plus magit, vertico, corfu, marginalia, embark, orderless, consult, transient, flycheck, flymake, cider, company, doom-modeline, treemacs, web-mode, and more.
+- **Broad face coverage** out of the box -- built-in Emacs faces plus magit, vertico, corfu, marginalia, embark, orderless, consult, transient, flycheck, flymake, cider, company, evil, mu4e, notmuch, doom-modeline, treemacs, web-mode, and more.
 
 ## Installation
 

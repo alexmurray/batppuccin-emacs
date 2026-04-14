@@ -637,6 +637,47 @@ The light flavor.")
          ;; Threading
          `(mu4e-thread-fold-face ((,class (:foreground ,bat-overlay2 :slant italic))))
 
+;;;;; notmuch
+         ;; Search view
+         `(notmuch-search-date ((,class (:foreground ,bat-overlay1))))
+         `(notmuch-search-count ((,class (:foreground ,bat-overlay2))))
+         `(notmuch-search-subject ((,class (:foreground ,bat-text))))
+         `(notmuch-search-matching-authors ((,class (:foreground ,bat-blue))))
+         `(notmuch-search-non-matching-authors ((,class (:foreground ,bat-overlay2))))
+         `(notmuch-search-flagged ((,class (:foreground ,bat-yellow :weight bold))))
+         `(notmuch-search-unread ((,class (:foreground ,bat-text :weight bold))))
+         ;; Tree view
+         `(notmuch-tree-match-author-face ((,class (:foreground ,bat-blue))))
+         `(notmuch-tree-match-date-face ((,class (:foreground ,bat-overlay1))))
+         `(notmuch-tree-match-subject-face ((,class (:foreground ,bat-text))))
+         `(notmuch-tree-match-tree-face ((,class (:foreground ,bat-overlay2))))
+         `(notmuch-tree-match-tag-face ((,class (:foreground ,bat-teal))))
+         `(notmuch-tree-no-match-author-face ((,class (:foreground ,bat-overlay2))))
+         `(notmuch-tree-no-match-date-face ((,class (:foreground ,bat-overlay2))))
+         `(notmuch-tree-no-match-subject-face ((,class (:foreground ,bat-overlay2))))
+         `(notmuch-tree-no-match-tree-face ((,class (:foreground ,bat-surface2))))
+         `(notmuch-tree-no-match-tag-face ((,class (:foreground ,bat-overlay2))))
+         ;; Show view
+         `(notmuch-message-summary-face ((,class (:foreground ,bat-subtext1 :background ,bat-mantle))))
+         ;; Tags
+         `(notmuch-tag-face ((,class (:foreground ,bat-teal))))
+         `(notmuch-tag-unread ((,class (:foreground ,bat-blue :weight bold))))
+         `(notmuch-tag-flagged ((,class (:foreground ,bat-yellow))))
+         `(notmuch-tag-deleted ((,class (:foreground ,bat-red :strike-through t))))
+         `(notmuch-tag-added ((,class (:foreground ,bat-green :underline t))))
+         ;; Wash (inline content toggling / citations)
+         `(notmuch-wash-toggle-button ((,class (:foreground ,bat-overlay1 :background ,bat-mantle))))
+         `(notmuch-wash-cited-text ((,class (:foreground ,bat-overlay2))))
+         ;; Crypto
+         `(notmuch-crypto-part-header ((,class (:foreground ,bat-subtext1))))
+         `(notmuch-crypto-signature-good ((,class (:foreground ,bat-green :weight bold))))
+         `(notmuch-crypto-signature-good-key ((,class (:foreground ,bat-green))))
+         `(notmuch-crypto-signature-bad ((,class (:foreground ,bat-red :weight bold))))
+         `(notmuch-crypto-signature-unknown ((,class (:foreground ,bat-yellow))))
+         `(notmuch-crypto-decryption ((,class (:foreground ,bat-sky))))
+         ;; Hello (welcome screen)
+         `(notmuch-hello-logo-background ((,class (:background ,bat-mantle))))
+
 ;;;;; org-mode
          `(org-archived ((,class (:foreground ,bat-overlay2))))
          `(org-block ((,class (:background ,bat-mantle :extend t))))
@@ -866,6 +907,14 @@ The light flavor.")
          `(smerge-refined-changed ((,class (:foreground ,bat-blue :background ,bat-diff-chg-bg :weight bold :extend t))))
 
 ;;;; Third-party packages
+;;;;; evil
+         `(evil-ex-commands ((,class (:foreground ,bat-subtext1 :underline t :slant italic))))
+         `(evil-ex-info ((,class (:foreground ,bat-red :slant italic))))
+         `(evil-ex-search ((,class (:foreground ,bat-base :background ,bat-flamingo :weight bold))))
+         `(evil-ex-lazy-highlight ((,class (:foreground ,bat-text :background ,bat-surface1))))
+         `(evil-ex-substitute-matches ((,class (:foreground ,bat-text :background ,bat-surface1))))
+         `(evil-ex-substitute-replacement ((,class (:foreground ,bat-peach :underline t :weight bold))))
+
 ;;;;; avy
          `(avy-lead-face ((,class (:foreground ,bat-base :background ,bat-red :weight bold))))
          `(avy-lead-face-0 ((,class (:foreground ,bat-base :background ,bat-blue :weight bold))))
