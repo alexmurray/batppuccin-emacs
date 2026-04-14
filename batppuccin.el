@@ -601,6 +601,42 @@ The light flavor.")
          `(message-mml ((,class (:foreground ,bat-green))))
          `(message-separator ((,class (:foreground ,bat-overlay2))))
 
+;;;;; mu4e
+         ;; Headers view – message flags
+         `(mu4e-unread-face ((,class (:foreground ,bat-blue :weight bold))))
+         `(mu4e-header-face ((,class (:foreground ,bat-subtext1))))
+         `(mu4e-flagged-face ((,class (:foreground ,bat-yellow :weight bold))))
+         `(mu4e-draft-face ((,class (:foreground ,bat-peach :slant italic))))
+         `(mu4e-trashed-face ((,class (:foreground ,bat-overlay2 :strike-through t))))
+         `(mu4e-replied-face ((,class (:foreground ,bat-overlay1))))
+         `(mu4e-forwarded-face ((,class (:foreground ,bat-overlay1))))
+         `(mu4e-related-face ((,class (:foreground ,bat-overlay2 :slant italic))))
+         ;; Headers view – UI elements
+         `(mu4e-header-title-face ((,class (:foreground ,bat-text :weight bold))))
+         `(mu4e-header-highlight-face ((,class (:background ,bat-surface0 :extend t))))
+         `(mu4e-header-marks-face ((,class (:foreground ,bat-peach :weight bold))))
+         `(mu4e-header-key-face ((,class (:foreground ,bat-mauve :weight bold))))
+         `(mu4e-header-field-face ((,class (:foreground ,bat-mauve))))
+         `(mu4e-header-value-face ((,class (:foreground ,bat-subtext1))))
+         `(mu4e-special-header-value-face ((,class (:foreground ,bat-sky))))
+         ;; Message view
+         `(mu4e-link-face ((,class (:foreground ,bat-teal :underline t))))
+         `(mu4e-contact-face ((,class (:foreground ,bat-blue))))
+         `(mu4e-highlight-face ((,class (:foreground ,bat-sky :weight bold))))
+         `(mu4e-title-face ((,class (:foreground ,bat-text :weight bold))))
+         `(mu4e-url-number-face ((,class (:foreground ,bat-teal :weight bold))))
+         `(mu4e-footer-face ((,class (:foreground ,bat-overlay2 :slant italic))))
+         ;; Compose
+         `(mu4e-compose-separator-face ((,class (:foreground ,bat-overlay2))))
+         ;; System / mode-line
+         `(mu4e-modeline-face ((,class (:foreground ,bat-blue))))
+         `(mu4e-system-face ((,class (:foreground ,bat-overlay2 :slant italic))))
+         `(mu4e-ok-face ((,class (:foreground ,bat-green :weight bold))))
+         `(mu4e-warning-face ((,class (:foreground ,bat-yellow :weight bold))))
+         `(mu4e-region-code ((,class (:background ,bat-surface0))))
+         ;; Threading
+         `(mu4e-thread-fold-face ((,class (:foreground ,bat-overlay2 :slant italic))))
+
 ;;;;; org-mode
          `(org-archived ((,class (:foreground ,bat-overlay2))))
          `(org-block ((,class (:background ,bat-mantle :extend t))))
