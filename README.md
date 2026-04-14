@@ -135,6 +135,36 @@ You can also hook into theme loads with `batppuccin-after-load-hook` -- each fun
               (set-face-attribute 'my-face nil :foreground bat-teal))))
 ```
 
+## Automatic Light/Dark Switching
+
+Batppuccin pairs well with packages that switch themes based on the time of
+day or your OS appearance setting:
+
+- [auto-dark](https://github.com/LionyxML/auto-dark-emacs) tracks your OS
+  dark/light mode and switches themes to match:
+
+```elisp
+(use-package auto-dark
+  :config
+  (setq auto-dark-dark-theme 'batppuccin-mocha
+        auto-dark-light-theme 'batppuccin-latte)
+  (auto-dark-mode 1))
+```
+
+- [circadian](https://github.com/guidoschmidt/circadian.el) switches on a
+  time-based schedule (e.g. sunrise/sunset):
+
+```elisp
+(use-package circadian
+  :config
+  (setq circadian-themes '((:sunrise . batppuccin-latte)
+                            (:sunset  . batppuccin-mocha)))
+  (circadian-setup))
+```
+
+See [Automatic Light/Dark Theme Switching](https://emacsredux.com/blog/2026/03/29/automatic-light-dark-theme-switching/)
+for a deeper look at both approaches.
+
 ## License
 
 GNU General Public License v3.0. See [COPYING](COPYING) for details.
