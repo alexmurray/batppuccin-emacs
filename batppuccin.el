@@ -1290,6 +1290,8 @@ The light flavor.")
          `(rainbow-delimiters-depth-7-face ((,class (:foreground ,bat-blue))))
          `(rainbow-delimiters-depth-8-face ((,class (:foreground ,bat-lavender))))
          `(rainbow-delimiters-depth-9-face ((,class (:foreground ,bat-mauve))))
+         ;; Error faces use a red box instead of a foreground color so they
+         ;; stay visible regardless of which depth color the paren already has.
          `(rainbow-delimiters-unmatched-face ((,class (:box (:line-width (-1 . -1) :color ,bat-red) :weight bold))))
          `(rainbow-delimiters-mismatched-face ((,class (:box (:line-width (-1 . -1) :color ,bat-red) :weight bold))))
          `(rainbow-delimiters-base-error-face ((,class (:box (:line-width (-1 . -1) :color ,bat-red) :weight bold))))
