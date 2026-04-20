@@ -568,7 +568,7 @@ The light flavor.")
 ;;;;; hi-lock
          `(hi-blue ((,class (:foreground ,bat-base :background ,bat-blue))))
          `(hi-green ((,class (:foreground ,bat-base :background ,bat-green))))
-         `(hi-pink ((,class (:foreground ,bat-base :background ,bat-red))))
+         `(hi-pink ((,class (:foreground ,bat-base :background ,bat-pink))))
          `(hi-yellow ((,class (:foreground ,bat-base :background ,bat-yellow))))
          `(hi-blue-b ((,class (:foreground ,bat-blue :weight bold))))
          `(hi-green-b ((,class (:foreground ,bat-green :weight bold))))
