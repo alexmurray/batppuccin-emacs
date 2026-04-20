@@ -1290,9 +1290,9 @@ The light flavor.")
          `(rainbow-delimiters-depth-7-face ((,class (:foreground ,bat-blue))))
          `(rainbow-delimiters-depth-8-face ((,class (:foreground ,bat-lavender))))
          `(rainbow-delimiters-depth-9-face ((,class (:foreground ,bat-mauve))))
-         `(rainbow-delimiters-unmatched-face ((,class (:inherit warning))))
-         `(rainbow-delimiters-mismatched-face ((,class (:inherit warning))))
-         `(rainbow-delimiters-base-error-face ((,class (:inherit warning))))
+         `(rainbow-delimiters-unmatched-face ((,class (:box (:line-width (-1 . -1) :color ,bat-red) :weight bold))))
+         `(rainbow-delimiters-mismatched-face ((,class (:box (:line-width (-1 . -1) :color ,bat-red) :weight bold))))
+         `(rainbow-delimiters-base-error-face ((,class (:box (:line-width (-1 . -1) :color ,bat-red) :weight bold))))
 
 ;;;;; smartparens
          `(sp-show-pair-match-face ((,class (:inherit show-paren-match))))
