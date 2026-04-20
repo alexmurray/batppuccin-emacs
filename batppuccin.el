@@ -391,8 +391,8 @@ The light flavor.")
          `(font-lock-variable-name-face ((,class (:foreground ,bat-flamingo))))
          `(font-lock-variable-use-face ((,class (:foreground ,bat-text))))
          `(font-lock-warning-face ((,class (:inherit warning))))
-         `(font-lock-property-name-face ((,class (:foreground ,bat-blue))))
-         `(font-lock-property-use-face ((,class (:foreground ,bat-blue))))
+         `(font-lock-property-name-face ((,class (:foreground ,bat-teal))))
+         `(font-lock-property-use-face ((,class (:foreground ,bat-teal))))
          `(font-lock-bracket-face ((,class (:foreground ,bat-overlay2))))
          `(font-lock-delimiter-face ((,class (:foreground ,bat-overlay2))))
          `(font-lock-escape-face ((,class (:foreground ,bat-pink))))
@@ -578,7 +578,7 @@ The light flavor.")
          `(hl-line ((,class (:background ,bat-cursor-line :extend t))))
 
 ;;;;; hl-todo
-         `(hl-todo ((,class (:foreground ,bat-flamingo :weight bold))))
+         `(hl-todo ((,class (:foreground ,bat-maroon :weight bold))))
 
 ;;;;; icomplete
          `(icomplete-first-match ((,class (:foreground ,bat-green :weight bold))))
