@@ -416,7 +416,7 @@ The light flavor.")
 ;;;;; show-paren
          `(show-paren-match ((,class (:foreground ,bat-peach :background ,bat-surface1 :weight bold))))
          `(show-paren-match-expression ((,class (:background ,bat-surface0))))
-         `(show-paren-mismatch ((,class (:foreground ,bat-red :background ,bat-base :weight bold :underline t))))
+         `(show-paren-mismatch ((,class (:foreground ,bat-red :background ,bat-surface1 :weight bold :underline t))))
 
 ;;;;; completions
          `(completions-annotations ((,class (:foreground ,bat-overlay2))))
